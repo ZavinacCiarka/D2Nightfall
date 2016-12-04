@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Diablo 2 - Resurgence (unofficial 1.13 mod)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/icon32-32.png">
+  <script type="text/javascript">
+    function transmute_crafting() {
+      document.getElementById("crafting_cube_ingredients").style.display = "none";
+      document.getElementById("crafting_cube_results").style.display = "block";
+
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row" style="position: relative; left:-32px;">
+      <div class="u-full-width" id="topbar">
+      </div>
+    </div>
+    <div class="row" style="position: relative; left:-32px;">
+      <div class="u-full-width" id="banner">
+      </div>
+    </div>
+    <div class="row">
+      <div class="u-full-width">
+        <h1 style="text-align: center;">Welcome to Resurgence</h1>
+        <div style="margin-left: 10%;margin-right: 10%; text-align: justify;">
+          <p>
+            Resurgence is a mod for Diablo II: Lord of Destruction (1.13c). It introduces many changes with the aim of promoting character balance and diversity while staying true to the original Diablo feel. 
+          </p>
+          <p>
+            While it is compatible with single player, most activity is centered around our online server with an active ladder schedule and thriving community.
+          </p>
+            Scroll down to learn more about Resurgence, or click on of the links below to start your new journey!
+          </p>
+          <div style="width:100%; text-align:center;">
+            <ul class="intro_navbar">
+            <li><a href="https://www.reddit.com/r/Diablo2Resurgence/comments/4d6fbf/slashdiablo_resurgence_launcher_beta/">Resurgence Launcher</a></li>
+            <li><a href="https://discord.gg/0cDYwWrMLIImycvz">Resurgence Discord</a></li>
+            <li><a href="https://www.reddit.com/r/Diablo2Resurgence">Resurgence Subreddit</a></li>
+            <li><a href="http://diablo2resurgence.wikia.com/wiki/Diablo2Resurgence_Wikia">Resurgence Wiki</a></li>
+          </ul>
+          <p style="font-size:1rem;">
+            Please note that if you want to play Resurgence you must have already installed Diablo II: Lord of Destruction (1.13c is recommended).
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row separator"></div>
+
+    <div class="row" style="text-align: center;"><h3>Same Feel, New Challenge</h3></div>
+    <div class="row">
+      <div class="six columns">
+        <iframe src='//gifs.com/embed/diablo-2-resurgence-launch-trailer-mZxMzr' frameborder='0' scrolling='no' width='480px' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);'' ></iframe>
+        <span class="caption">Necromancers get additional bone spears with points into Energy</span>
+        <br />
+        <iframe src='//gifs.com/embed/diablo-2-resurgence-launch-trailer-rkDMww' frameborder='0' scrolling='no' width='480px' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);'' ></iframe>
+        <span class="caption">Paladin’s Vengeance has been reworked into an AoE melee attack that converts some portion of physical damage to magic</span>
+      </div> 
+      <div class="six columns" style="text-align: justify">
+        <p>
+          Preserving the atmosphere of the original Diablo II game is a key element of Resurgence. The majority of changes are centered around providing a fair game for all skills and classes. Players shouldn’t feel bad for building non-traditional characters because ‘meta’ builds such as Blizzard Sorceress and Blessed Hammer Paladin are so much more powerful in comparison.
+        </p>
+        <p>
+          These changes are made through a number of ways - from the removal of most monster damage immunities, to simple number tweaking of skills, to the introduction of new item properties or complete removal and revitalization of obsolete skills.
+        </p>
+        <p>
+          Paladins can forgo the traditional sword-and-board to vanquish enemies using the Vengeance skill, now a two-handed only area of effect attack. Players dabbling in the dark arts will be delighted to find that Necromancer’s Bone Spear now has a synergy that grants additional projectiles (one projectile per 100 Energy). The player may come across items with the “Melee attacks deal splash damage” property, which allows single target melee attacks to do area damage - a significant boon to the clear speed of traditionally lacklustre melee classes (which also benefit from a global increase to base weapon damages).
+        </p>
+        <p>
+          Content is being continually developed, from the introduction of new items and zones to the handling of the whirling wheel of character and skill balance. In the new future expect to see adjustments to character progression and power through Normal and Nightmare difficulty modes. A range of new crafting trinkets loom on the horizon, set to change the way the player tackles itemization.
+        </p>
+      </div>
+    </div>       
+
+
+    <div class="row separator" ></div>
+
+    <div class="row" style="text-align: center;"><h3>Innovative Itemization</h3></div>
+    <div class="row">
+      <div class="six columns" style="text-align: justify;">
+        <p>
+          Loot is fundamental to ARPGs, and Diablo II is no exception. As part of expanding the game and increasing the diversity of options open to the player, Resurgence introduces hundreds of new Unique items, over a dozen new Sets and countless tweaking and refinement of existing items and Runewords.
+        </p>
+        <p>
+          There are new exclusive item types for each class. The magic affix and crafting system has been overhauled thoughtfully and streamlined into something more rewarding for the player.
+        </p>
+        <p>
+          Affixes that spawn on Rare and Crafted items are no longer restricted to lower tier values. This combats the philosophy that every equipment slot is best be filled by a Unique or Runeword, as well-rolled Rare constitute some of the best gear in the game.
+        </p>
+        <p>
+          <a href="http://diablo2resurgence.wikia.com/wiki/">For more information check out the Items pages on the Resurgence wiki (scroll down to Item Changes).</a>
+        </p>
+      </div>
+      <div class="six columns">
+        <iframe src='//gifs.com/embed/diablo-2-resurgence-launch-trailer-Z6MpGE' frameborder='0' scrolling='no' width='480px' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);'' ></iframe>
+        <span class="caption">New items such as this cold/fire multishot bow enable brand new late-game builds for more than just the obvious classes</span>
+      </div>      
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <h3>&nbsp;</h3>
+        <div class="item_hover">
+        <div class="block">
+            <a href="javascript:void(0)" class="tooltip"><img src="images/shamanrod.png" />
+              <div>
+                <span class="diablo_white block">
+                  Shaman Rod<br />
+                  Two-Hand Damage: 81-148<br />
+                  Durability: 61 of 100
+                </span>
+                <span class="diablo_red block">
+                  (Druid Only)
+                </span>
+                <span class="diablo_white block">
+                  Required Strength: 93<br />
+                  Required Level: 41<br />
+                  Mace Class - Normal Attack Speed
+                </span>
+                <span class="diablo_blue block">
+                  +2% Experience Gained<br />
+                  +50% Damage to Undead
+                </span>                            
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/templarbasinet.png" />
+              <div>
+                <span class="diablo_white block">
+                  Superior Templar Basinet<br />
+                  Defense: 88<br />
+                  Durability: 110 of 110
+                </span>
+                <span class="diablo_red block">
+                  (Paladin Only)
+                </span>
+                <span class="diablo_white block">
+                  Required Strength: 105<br />
+                  Required Level: 64<br />
+                </span>
+                <span class="diablo_blue block">
+                  +11% Increased Attack Speed<br />
+                  Increased Maximum Durability 10%
+                </span>                            
+              </div>
+            </a>          
+            <a href="javascript:void(0)" class="tooltip"><img src="images/garnetring.png" />
+              <div>
+                <span class="diablo_blue block">
+                  Platinum Garnet Ring
+                </span>
+                <span class="diablo_white block">
+                  Required Level: 45
+                </span>
+                <span class="diablo_blue block">
+                  +186 Attack Rating<br />
+                  3% Life Replenished on Kill
+                </span>                          
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/sapphireamulet.png" />
+              <div>
+                <span class="diablo_blue block">
+                  Golemlord's Sapphire Amulet'
+                </span>
+                <span class="diablo_white block">
+                  Required Level: 48
+                </span>
+                <span class="diablo_blue block">
+                  +3 Summoning Skills (Necromancer Only)<br />
+                  +26% Cold Resistance
+                </span>                          
+              </div>
+            </a>           
+            <a href="javascript:void(0)" class="tooltip"><img src="images/Mendelns_Rapture.gif" />
+              <div>
+                <span class="diablo_unique block">
+                  Mendeln's Rapture<br />
+                  Skull Cage
+                </span>
+                <span class="diablo_white block">
+                  Defense: <span class="diablo_blue">742</span><br />
+                  Durability: 70 of 75
+                </span>
+                <span class="diablo_red block">
+                  (Necromancer Only)
+                </span>
+                <span class="diablo_white block">
+                  Required Strength: 83<br />
+                  Required Level: 53
+                </span>
+                <span class="diablo_blue block">
+                  +15% Faster Hit Recovery<br />
+                  +(150-180)% Enhanced Defense<br />
+                  You Can Summon 3 Additional Golems<br />
+                  You cannot summon Skeletons<br />
+                  +40% Cold Resistance<br />
+                  +8% Physical Resistance
+                </span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/Voidbringer.gif" />
+              <div>
+                <span class="diablo_unique block">
+                  Voidbringer<br />
+                  Grand Matron Bow
+                </span>
+                <span class="diablo_white block">
+                  Two-Hand Damage: <span class="diablo_blue">116 to 745</span><br />
+                </span>
+                <span class="diablo_red block">
+                  (Amazon Only)
+                </span>
+                <span class="diablo_white block">
+                  Required Dexterity: 152<br />
+                  Required Strength: 108<br />
+                  Required Level: 75
+                </span>
+                <span class="diablo_blue block">
+                  <span class="diablo_white">Bow Class - </span>Very Fast Attack Speed<br />
+                  8% chance to Cast Level 22 Hoarfrost On Striking<br />
+                  35% Increased Attack Speed<br />
+                  +315% Enhanced Damage<br />
+                  +160 to Maximum Damage (Based on Character Level)<br />              
+                  +58 to Dexterity
+                </span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/Eon_Band.gif" />
+              <div>
+                <span class="diablo_unique block">
+                  Eon Band<br />
+                  Gold Ring
+                </span>
+                <span class="diablo_white block">
+                  Required Level: 78
+                </span>
+                <span class="diablo_blue block">
+                  +22 to all Attributes<br />
+                  +25% Elemental Resistances<br />
+                  2% Life Replenished per Second<br />
+                  Curse Immunity                
+                </span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/Gretana.gif" />
+              <div>
+                <span class="diablo_unique block">
+                  Gretana<br />
+                  Vampirefang Belt
+                </span>
+                <span class="diablo_white block">
+                  Defense: <span class="diablo_blue">137</span><br />
+                  Durability: 77 of 100<br />
+                  Required Strength: 50<br />
+                  Required Level: 69
+                </span>
+                <span class="diablo_blue block">
+                  5% Chance to Gain 8 Seconds of Conduction On Kill<br />
+                  +115% Enhanced Defense<br />
+                  Increase Maximum Life 9%<br />
+                  -36% Lightning Resistance<br />
+                  Nearby enemies take Lightning damage per second<br /> equal to 50% of your Maximum Life                
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="block">
+            <a href="javascript:void(0)" class="tooltip"><img src="images/Amms_Eclipse.gif" />
+              <div>
+                <span class="diablo_unique block">
+                  Amm's Eclipse<br />
+                  Demon Heart
+                </span>
+                <span class="diablo_white block">
+                  One-Hand Damage: 32 to 77<br />
+                  Durability: 90 of  150
+                </span>
+                <span class="diablo_red block">
+                  (Sorceress Only)
+                </span>
+                <span class="diablo_white block">
+                  Required Level: 70<br />
+                  Staff Class - Fast Attack Speed
+                </span>
+                <span class="diablo_blue block">
+                  20% chance to Cast Level 6 Amplify Damage When Struck<br />
+                  +2 to Sorceress Skill Levels<br />
+                  +20% Faster Cast Rate<br />
+                  +38% Faster Hit Recovery<br />
+                  100% of Lightning Skill damage converted to Physical<br />
+                  Socketed (2)
+                </span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/Transcendence.gif" />
+              <div>
+                <span class="diablo_unique block">
+                  Transcendence<br />
+                  Diamond Bow
+                </span>
+                <span class="diablo_white block">
+                  Two-Hand Damage: <span class="diablo_blue">192-234</span><br />
+                  Required Dexterity: 132<br />
+                  Required Strength: 89<br />
+                  Required Level: 75<br />
+                  Bow Class - <span class="diablo_blue">Very Fast Attack Speed</span>
+                </span>
+                <span class="diablo_blue block">
+                  20% Increased Attack Speed<br />
+                  +200% Enhanced Damage<br />
+                  +5 to Cold Arrow<br />
+                  +5 to Fire Arrow<br />
+                  Cold Arrow Fires an Additional 10 Projectiles<br />
+                  Fire Arrow fires an additional 10 Projectiles<br />
+                  Socketed (3)
+                </span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/Steelrend.gif" />
+              <div>
+                <span class="diablo_unique block">
+                  Steelrend<br />
+                  Ogre Gauntlets
+                </span>
+                <span class="diablo_white block">
+                  Defense: <span class="diablo_blue">344</span><br />
+                  Durability: 95 of 100<br />
+                  Required Strength: 185<br />
+                  Required Level: 70
+                </span>
+                <span class="diablo_blue block">
+                  Melee Attacks Deal Splash Damage<br />                
+                  +48% Enhanced Damage<br />
+                  10% Chance of Crushing Blow<br />
+                  +273) Defense<br />
+                  +49 to Strength                
+                </span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/Avatar_of_Fire.gif" />
+              <div>
+                <span class="diablo_unique block">
+                  Avatar of Fire<br />
+                  Conqueror Crown
+                </span>
+                <span class="diablo_white block">
+                  Defense: <span class="diablo_blue">438</span><br />
+                  Durability: 85 of 100
+                </span>
+                <span class="diablo_red block">
+                  (Barbarian Only)
+                </span>
+                <span class="diablo_white block">
+                  Required Strength: 174<br />
+                  Required Level:77
+                </span>              
+                <span class="diablo_blue block">
+                  +93 Minimum Fire Damage (Based on Strength)<br />
+                  +187 Maximum Fire Damage (Based on Strength)<br />
+                  +145% Enhanced Defense<br />
+                  +48% Fire Resistance<br />
+                  2% Life Regenerated per Second<br />
+                  -22% Enemy Fire Resistance (Based on Level)
+                </span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/The_Gloaming.gif" />
+              <div>
+                <span class="diablo_unique block">
+                  The Gloaming<br />
+                  Shadow Plate
+                </span>
+                <span class="diablo_white block">
+                  Defense: <span class="diablo_blue">1473</span><br />
+                  Durability: 61 of 100<br />
+                  Required Strength: 173<br />
+                  <span class="diablo_red">Required Level: 83</span>
+                </span>
+                <span class="diablo_blue block">
+                  5% Chance to Gain 6 Seconds of Grace On Kill<br />
+                  5% Chance to Gain 6 Seconds of Empower On Kill<br />                
+                  +164% Enhanced Defense<br />
+                  Lightning Absorb +13<br />
+                  Nearby Enemies have -35% Magic Resistance<br />
+                  Requirements -25%                
+                </span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/Metalgrid.gif" />
+              <div>
+                <span class="diablo_unique block">
+                  Metalgrid<br />
+                  Ruby Amulet
+                </span>
+                <span class="diablo_white block">
+                  Level Requirement: 81
+                </span>
+                <span class="diablo_blue block">
+                  +461 to Attack Rating<br />
+                  +7 to IronGolem<br />
+                  +433 Defense<br />
+                  +32% Elemental Resistances <br />                
+                  +10% Physical Resistance
+                </span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/Templars_Might.gif" />
+              <div>
+                <span class="diablo_unique block">
+                  Templar's Might<br />
+                  Sacred Armor
+                </span>
+                <span class="diablo_white block">
+                  Defense: <span class="diablo_blue">1887</span><br />
+                  Durability: 92 of 100<br />
+                  Required Strength: 232<br />
+                  Required Level: 74
+                </span>
+                <span class="diablo_blue block">
+                  Level 12 Might Aura When Equipped<br />
+                  +2 to Offensive Auras (Paladin Only)<br />
+                  +25% Faster Hit Recovery<br />
+                  +214% Enhanced Defense<br />
+                  +30 to Strength<br />
+                  +21 to Vitality
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <span class="caption">Hover over these items to see their description.</span>        
+               
+      </div>
+    </div>    
+
+    <div class="row separator" ></div>
+
+    <div class="row" style="text-align: center;"><h3>End-Game Content</h3></div>
+    <div class="row" style="margin-bottom: 25px">
+      <div class="twelve columns" style="text-align: justify;">
+        <p>
+          Beyond providing balance to the original game, Resurgence has a distinct focus on giving players a variety of new options for end-game content. This comes through new content and new combat mechanics. Act 5 Nightmare and Hell have received a significant monster overhaul and keep players thinking on their feet. Some non-essential side areas have also been made into zones for end-game activity, such as The Killing Fields which replaces The Hole Level 2. The area is aptly named and is the graveyard for many fallen heroes.
+        </p>
+        <p>
+          The Uber system the players is now a genuine challenge - players cannot simple Smite and Life Tap their way to a Hellfire Torch! The hellish red portals must also traversed if you wish to find Diablo’s Soulstone - a trinket that must be sold in order to summon Diablo Clone (instead of The Stone of Jordan as required in the original Diablo II).
+        </p>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom: 10px">
+      <div class="six columns">
+        <iframe src='//gifs.com/embed/diablo-2-resurgence-launch-trailer-zpOxDY' frameborder='0' scrolling='no' width='480px' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);'' ></iframe>
+        <span class="caption">Some monsters pose even more of a danger after their death, beware!</span>
+      </div>
+      <div class="six columns">
+        <iframe src='//gifs.com/embed/diablo-2-resurgence-launch-trailer-W6JjrJ' frameborder='0' scrolling='no' width='480px' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);'' ></iframe>
+        <span class="caption">A Frenzy Barb making his way through The Killing Fields</span>
+      </div>   
+    </div>    
+
+    <div class="row separator" ></div>
+
+    <div class="row" style="text-align: center;"><h3>Crystal Clear Crafting</h3></div>
+    <div class="row">
+      <div class="nine columns" style="text-align: justify;">
+        <p>
+          Resurgence introduces a revamped crafting system which revolves around the use of specialized crafting items rather than Runes. Rather than having to keep a stock of various runes, these crystals enable efficient crafting which is available to the player as soon as they obtain the Horadric Cube. The three tiers of crafting Crystals are: Blessed (common), Regal (uncommon), and Divine (rare). These crystals are obtained as enemy item drops.        
+        </p>
+          <a href="http://diablo2resurgence.wikia.com/wiki/Crafting_Recipes">For more information check out the Crafting pages on the Resurgence wiki.</a>
+      </div>
+      <div class="three columns" id="crafting_tooltips">
+          <a href="javascript:void(0)" class="tooltip"><img src="images/bcrystal.gif" />Blessed Crystal
+            <div>
+              <span class="diablo_white block">
+                The multitool of crafting. Used to create basic Crafted items, reroll magic items and sockets amongst other things.             
+              </span>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="tooltip"><img src="images/rcrystal.gif" />Regal Crystal
+            <div>
+              <span class="diablo_white block">
+                Used to create high-end Crafted items.             
+              </span>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="tooltip"><img src="images/dcrystal.gif" />Divine Crystal
+            <div>
+              <span class="diablo_white block">
+                Used to create incredibly powerful Crafted items.       
+              </span>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="tooltip"><img src="images/astone.gif" />Alchemist's Stone
+            <div>
+              <span class="diablo_white block">
+                Upgrades a Normal item to a random rarity.
+              </span>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="tooltip"><img src="images/scube.gif" />Strange Cube
+            <div>
+              <span class="diablo_white block">
+                Adds sockets to Rare or Crafted items.
+              </span>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="tooltip"><img src="images/cprism.gif" />Chaos Prism
+            <div>
+              <span class="diablo_white block">
+                Rerolls the random properties of a Unique items.
+              </span>
+            </div>
+          </a>
+      </div>
+    </div>
+
+    <div class="row separator" ></div>
+
+    <div class="row" style="text-align: center;"><h3>Charming New Systems</h3></div>
+    <div class="row">
+      <div class="eight columns" style="text-align: justify;">
+        <p>
+            Instead of the frustrating trade-off between min-maxing of your character stats and having enough inventory space to handle loot, Resurgence restricts the player to only carry six different Unique charms. These charms are found by killing specific Superunique monsters as you progress through the game. These Unique charms start off as blank slates - each having a set number of ‘free’ stat slots the player can fill by imbuing them with charm components that drop randomly throughout their adventures. This enables incredible customization, with over one hundred different sigils, glyphs and ankhs providing an array of properties to empower your character.
+            <br />
+            <br />
+            To get an idea of how this process works, click "Transmute" in the cube to the right and watch the Charm gain a stat.
+          </p>
+          <div class="item_hover">
+            <a href="javascript:void(0)" class="tooltip"><img src="images/glyph_garnet.png" />
+              <div>
+                <span class="diablo_white block">
+                  Garnet Glyph
+                </span>
+                <span class="diablo_orange block">
+                  Charm Component
+                </span>
+                <span class="diablo_white block">
+                  Adds The Following Property to A Charm:
+                </span>              
+                <span class="diablo_blue block">
+                4-7% Fire Resistance<br />(Uses 1 Primary Stat Slot)
+                </span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/t2_fireres.png" />
+              <div>
+                <span class="diablo_rare block">
+                  Ruby Glyph
+                </span>
+                <span class="diablo_orange block">
+                  Charm Component
+                </span>
+                <span class="diablo_white block">
+                  Adds The Following Property to A Charm:
+                </span>              
+                <span class="diablo_blue block">
+                10-13% Fire Resistance<br />(Uses 1 Primary Stat Slot)
+                </span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/freezingsigil.png" />
+              <div>
+                <span class="diablo_blue block">
+                  Freezing Sigil
+                </span>
+                <span class="diablo_orange block">
+                  Charm Component
+                </span>
+                <span class="diablo_white block">
+                  Adds The Following Property to A Charm:
+                </span>              
+                <span class="diablo_blue block">
+                +18-24 Cold Damage<br />(Uses 1 Secondary Stat Slot)
+                </span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/sigil_magus.webp" />
+              <div>
+                <span class="diablo_rare block">
+                  Magus' Sigil
+                </span>
+                <span class="diablo_orange block">
+                  Charm Component
+                </span>
+                <span class="diablo_white block">
+                  Adds The Following Property to A Charm:
+                </span>              
+                <span class="diablo_blue block">
+                  6-8% Faster Cast Rate<br />(Uses 1 Secondary Stat Slot)
+                </span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/ankh_puncture.webp" />
+              <div>
+                <span class="diablo_rare block">
+                  Ankh of Puncture
+                </span>
+                <span class="diablo_orange block">
+                  Charm Component
+                </span>
+                <span class="diablo_white block">
+                  Adds The Following Property to A Charm:
+                </span>              
+                <span class="diablo_blue block">
+                5% Pierce<br />(Uses 1 Tertiary Stat Slot)
+                </span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/voidinnoc.png" />
+              <div>
+                <span class="diablo_unique block">
+                  Void Innoculation
+                </span>
+                <span class="diablo_orange block">
+                  Charm Component
+                </span>
+                <span class="diablo_white block">
+                  Adds The Following Property to A Charm:
+                </span>              
+                <span class="diablo_blue block">
+                2% Chance to Gain 10 Seconds of Empower When Struck<br />(Uses 1 Tertiary Stat Slot)
+                </span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="tooltip"><img src="images/livinglava.png" />
+              <div>
+                <span class="diablo_unique block">
+                  Living Lava
+                </span>
+                <span class="diablo_orange block">
+                  Charm Component
+                </span>
+                <span class="diablo_white block">
+                  Adds The Following Property to A Charm:
+                </span>              
+                <span class="diablo_blue block">
+                +1 Maximum Fire Resistance<br />(Uses 1 Tertiary Stat Slot)
+                </span>
+              </div>
+            </a>
+        </div>
+        <span class="caption">Hover over these items to see their description.</span><br />
+        <p>
+          <a href="http://diablo2resurgence.wikia.com/wiki/Charms">For more information check out the Charms pages on the Resurgence wiki.</a>
+        </p>        
+      </div>
+      <div class="four columns">
+        <div class="horadric_cube_container">'
+          <div id="crafting_cube_ingredients">
+              <div class="horadric_cube_ingredients" style= "top: 143px; left: 120px;" />
+                <a href="#" class="tooltip"><img src="images/gojes_talisman.png" />
+                  <div>
+                    <span class="diablo_unique block">
+                      Eldritch Knowledge<br />
+                      Small Charm
+                    </span>
+                    <span class="diablo_white block">
+                      Keep in Inventory to Gain Bonus
+                    </span>
+                    <span class="diablo_blue block">
+                      Available Primary Stat Slots: 2<br />
+                      Available Secondary Stat Slots: 1<br />
+                      Available Tertiary Stat Slots: 1<br />
+                    </span>
+                  </div>
+                </a>            
+              </div>
+
+              <div class="horadric_cube_ingredients" style= "top: 171px; left: 150px;" />
+                <a href="#" class="tooltip"><img src="images/sigil_gheeds_fortune.png" />
+                  <div>
+                    <span class="diablo_unique block">
+                      Gheed's Fortune<br />
+                    </span>
+                    <span class="diablo_orange block">
+                      Charm Component
+                    </span>
+                    <span class="diablo_white block">
+                      Adds The Following Property to A Charm:
+                    </span>              
+                    <span class="diablo_blue block">
+                      30% Better Chance of Finding Magical Items<br />(Uses 1 Secondary Stat Slot)
+                    </span>
+                  </div>
+                </a>            
+              </div>
+            </div>
+            <div id="crafting_cube_results" class="horadric_cube_ingredients" style="display: none;" />
+              <div class="horadric_cube_ingredients" style= "top: 143px; left: 120px;" />
+              <a href="#" class="tooltip"><img src="images/gojes_talisman.png" />
+                <div>
+                  <span class="diablo_unique block">
+                    Eldritch Knowledge<br />
+                    Small Charm
+                  </span>
+                  <span class="diablo_white block">
+                    Keep in Inventory to Gain Bonus
+                  </span>
+                  <span class="diablo_blue block">
+                    30% Better Chance of Finding Magical Items<br />
+                    Available Primary Stat Slots: 2<br />
+                    Available Secondary Stat Slots: 0<br />
+                    Available Tertiary Stat Slots: 1<br />
+                  </span>
+                </div>
+              </a>            
+              </div>
+            </div>
+
+          <div class="horadric_cube_ingredients" style= "width: 38px; height: 38px; top: 260px; left: 145px;" />
+          <a href="javascript:void(0)" onclick="javascript:transmute_crafting();" class="tooltip"><img src="images/transmute.gif" />
+            <div>
+              <span class="diablo_white block">
+                Transmute
+              </span>              
+            </div>
+          </a>
+          </div>           
+        </div>
+      </div>      
+    </div>   
+
+    
+    <div class="row" style="text-align: center; margin-top: 50px;"><h3>Storage and Quality of Life</h3></div>
+    <div class="row">
+      <div class="nine columns" style="text-align: justify;">
+        <p>
+          The stash size has has been greatly increased and crafting materials can now be stored in the Horadric Catalyst (Runes and Gems) or Horadric Vessels (Crystals and other Crafting Regeants).
+        </p>
+          <a href="http://diablo2resurgence.wikia.com/wiki/Crafting_Quality_of_Life_Items">For more information check out the Crafting Quality of Life page on the Resurgence wiki.</a>
+      </div>
+      <div class="three columns" style="text-align: center;">
+            <a href="javascript:void(0)" class="tooltip" style="margin-right: 25px; margin-left: 25px;"><img src="images/vessel_bcrystal.gif" />
+              <div>
+                <span class="diablo_unique block">
+                  Horadric Vessel
+                </span>
+                <span class="diablo_blue block">
+                  Can Hold the Following Item Type:
+                </span>
+                <span class="diablo_orange block">
+                  Blessed Crystal
+                </span>
+                <span class="diablo_white block">
+                  <br /><br />
+                  Quantity: 37
+                </span>
+              </div>
+            </a>
+            <a href="javascript:void(0)#" class="tooltip" style="margin-right: 25px; margin-left: 25px;"><img src="images/catalyst.gif" />
+              <div>
+                <span class="diablo_unique block">
+                  Horadric Catalyst
+                </span>
+                <span class="diablo_blue block">
+                  Transmogrifies Runes and Gems Into Essence
+                </span>
+                <span class="diablo_white block">
+                  <br /><br />
+                  Gem Essence: 12<br />
+                  Greater Rune Essence: 5<br />
+                  Lesser Rune Essence: 359<br />
+                </span>
+              </div>
+            </a>
+          <span class="caption">
+            Hover over the Horadric Vessel and Catalyst for the item descriptions.
+          </span>
+      </div>
+    </div>        
+
+    <div class="row separator" ></div>
+
+    <div class="row" style="text-align: center;"><h3>Nephalem's Valor Sub-classes</h3></div>
+    <div class="row">
+      <div class="twelve columns">
+        <p>
+          After killing Baal in Hell, players can find a Nephalem’s Valor charm in the antechamber of the Worldstone. This charm allows the player to specialize their builds by selecting one of the three unique subclasses available to their class. However, there is a cost. The player must offer up a powerful and relevant Unique item as a sacrifice as a sign of devotion to their selected path. For instance, the Mage (Sorceress) subclass can only be ascended to if you are willing to sacrifice one of the following: Griffon’s Eye (Diadem), Nightwing’s Veil (Spired Helm) or The Red Devil (Armet).        
+        </p>
+      </div>
+    </div>
+    
+    <div class="row neph_valor_row">
+      <div class="three columns">
+        <img src="images/Amazon.gif" />
+      </div>
+      <div class="nine columns">
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Matriarch</th>
+              <th>Deadeye</th>
+              <th>Ranger</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>You Can Summon 2 Additional Valkyries<br />3% Life Regenerated per Second<br />+15% Physical Resistance</td>
+              <td>25% Projectile Pierce CHance<br />+1000 to Attack Rating<br />40% Deadly Strike</td>
+              <td>+40% Faster Run/Walk<br />+8% Maximum Poison Resistance<br />+8% Maximum Cold Resistance<br />100% Better Chance of Getting Magic Items</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row neph_valor_row">
+      <div class="nine columns">
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Reaper</th>
+              <th>Viper</th>
+              <th>Saboteur</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>+30% Increased Attack Speed<br />Adds 200-400 Damage<br />4% Reanimate as: Eternal Horror</td>
+              <td>30% Increased Poison Damage<br />-30% to Enemy Poison Resistance<br />+100 Life Gained on Hit<br />+100 Mana Gained on Hit</td>
+              <td>+40% Faster Hit Recovery<br />100% Projectile Pierce Chance<br />You Can Place an Additional 1 Traps<br />+10% Maximum Lightning Resistance</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>      
+      <div class="three columns">
+        <img src="images/Assassin.gif" />
+      </div>
+    </div>    
+
+    <div class="row neph_valor_row">
+      <div class="three columns">
+        <img src="images/Necromancer.gif" />
+      </div>
+      <div class="nine columns">
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Occultist</th>
+              <th>Diabolist</th>
+              <th>Warlock</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>+30% Increased Curse Effect<br />Curse Immunity<br />Your Minions Have Curse Immunity</td>
+              <td>-15% to Enemy Poison Resistance<br />-15% to Enemy Magic Resistance<br />+20 to Vampiric Spirit</td>
+              <td>+25% Faster Cast Rate<br />Magic Skills Deal 35% Extra Damage as Physical<br />15% Magic Resistance</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row neph_valor_row">
+      <div class="nine columns">
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Slayer</th>
+              <th>Titan</th>
+              <th>Conqueror</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Melee Attacks Deal Splash Damage<br />+35% Increased Attack Speed<br />20% Life Stolen per Hit</td>
+              <td>+1000 Defense<br />Increased Maximum Life +20%<br />Cannot Be Frozen</td>
+              <td>8% Chance to Gain 6 Seconds of Resurgence on Kill<br />50% Increased Effect of War Cries<br />+5% Experience Gained</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="three columns">
+        <img src="images/Barbarian_diablo_II.gif" />
+      </div>
+    </div>   
+
+    <div class="row neph_valor_row">
+      <div class="three columns">
+        <img src="images/Paladin.gif" />
+      </div>
+      <div class="nine columns">
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Templar</th>
+              <th>Guardian</th>
+              <th>Justicar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>20% Chance to Cast Level 40 Fist of the Heavens When Struck<br />Nearby Allies Have +100 Life Regeneration per Second<br />30% Increased Effect of Auras</td>
+              <td>+50% Faster Block Rate<br />Physical Damage Taken Reduced by 35<br />Magic Damage Taken Reduced by 35<br />Nearby Enemies Have 20% Reduced Attack and Movement Speed</td>
+              <td>Attacks Ignore Monster Defense<br />-20% to Enemy Magic Resistance<br />Attacks Ignore Physical Resistance of Undead<br />Attacks Ignore Physical Resistance of Demons</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>    
+
+    <div class="row neph_valor_row">
+      <div class="nine columns">
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Arcanist</th>
+              <th>Mage</th>
+              <th>Clairvoyant</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>8% Chance to Cast Level 12 Elemental Weakness on Striking<br />+1 to Dancing Blade<br />+25% Magic Resistance</td>
+              <td>25% Increased Elemental Damage<br />-15% Enemy Elemental Resistances<br />+5% Maximum Elemental Resistances</td>
+              <td>+40% Faster Cast Rate<br />30% Reduced Skill Cooldown<br />+250 to Mana<br />100% Increased Mana Regenration</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="three columns">
+        <img src="images/Sorceress.gif" />
+      </div>
+    </div>
+
+    <div class="row neph_valor_row">
+      <div class="three columns">
+        <img src="images/Druid.gif" />
+      </div>
+      <div class="nine columns">
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Keeper</th>
+              <th>Shaman</th>
+              <th>Cerberus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>+30% Faster Run Walk<br />Your Ravens Have Unlimited Attacks<br />+1 to Enchanted Raven</td>
+              <td>You Can Summon All Spirits Simultaneously<br />+1 to Healing Wave<br />+10% Maximum Fire Resistance</td>
+              <td>-25% to Enemy Physical Resistance<br />20% Life Stolen per Hit<br />Nearby Allies Have +100% Enhanced Damage</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row separator"></div>
+    <div class="row">
+      <div style="width:100%; text-align:center;">
+        <ul class="intro_navbar">
+          <li><a href="https://www.reddit.com/r/Diablo2Resurgence/comments/4d6fbf/slashdiablo_resurgence_launcher_beta/">Resurgence Launcher</a></li>
+          <li><a href="https://discord.gg/0cDYwWrMLIImycvz">Resurgence Discord</a></li>
+          <li><a href="https://www.reddit.com/r/Diablo2Resurgence">Resurgence Subreddit</a></li>
+          <li><a href="http://diablo2resurgence.wikia.com/wiki/Diablo2Resurgence_Wikia">Resurgence Wiki</a></li>
+        </ul>
+        <p style="font-size:1rem;">
+          Please note that if you want to play Resurgence you must have already installed Diablo II: Lord of Destruction 1.13 (1.13c is recommended).
+        </p>
+      </div>
+    </div>
+    
+    <div class="row separator"></div>
+
+    <div class="row" style="text-align: center; font-size:1rem;">
+        <div>
+          <p>
+            Diablo 2 Resurgence is an unofficial modification for Diablo 2: Lord of Destruction with absolutely no commercial elements.<br /> 
+          All trademarks referenced herein are the properties of their respective owners.
+          <p>
+            Battle.net®<br />
+            ©1996 - 2014 Blizzard Entertainment, Inc. All rights reserved. Battle.net and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
+          </p>
+          <p>
+            Diablo® II<br />
+            ©2000 Blizzard Entertainment, Inc. All rights reserved. Diablo and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
+          </p>
+          <p>
+            Diablo® II: Lord of Destruction®<br />
+            ©2001 Blizzard Entertainment, Inc. All rights reserved. Diablo, Lord of Destruction and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
+          </p>
+        </div>
+      </div>
+    <div class="row" style="position: relative; left:-32px;">
+      <div class="u-full-width" id="footer" >
+      </div>
+    </div>
+
+
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
