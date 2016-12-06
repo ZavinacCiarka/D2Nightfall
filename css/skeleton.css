@@ -439,6 +439,9 @@ ul.intro_navbar li {
   margin-right: 15px;
 }
 
+img.desaturate {
+	filter: grayscale(100%);
+}
 
 .item_hover {
   vertical-align: middle; 
