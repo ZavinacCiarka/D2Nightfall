@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+h1 {
+margin-top: 10px;
+margin-bottom: 0px;
+color: #928a70;
+text-align: center;
+font-size: 15px;
+font-weight: bold;
+}
+
+h2 {
+margin-top: 0px;
+margin-bottom: 10px;
+color: #fff;
+text-align: center;
+font-size: 15px;
+font-weight: normal;
+    font-family:		myFirstFont;
+
+}
+
+h3 {
+margin-top: 0px;
+margin-bottom: 0px;
+color: #4850b8;
+text-align: center;
+font-size: 15px;
+font-weight: normal;
+}
+
+h4 {
+margin-top: 0px;
+margin-bottom: 0px;
+color: #b27300;
+text-align: center;
+font-size: 15px;
+font-weight: normal;
+}
+
+
+h5 {
+margin-top: 0px;
+margin-bottom: 10px;
+color: #afafaf;
+text-align: center;
+font-size: 15px;
+font-weight: bold;
+    font-family:		myFirstFont;
+
+}
+
+
+p.dashed { 
+  border-style: dotted;
+    border-radius: 4px;
+    border-color: #908858;
+    border-width: 2px;
+   line-height: 0;
+    padding: 0px;
+ margin-bottom: 20px;
+margin-top: 20px;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+
+
+p.unknown {
+  filter: grayscale(100%);
+border-style: dotted;
+    border-radius: 4px;
+    border-color: #908858;
+    border-width: 2px;
+   line-height: 0;
+    padding: 0px;
+ margin-bottom: 20px;
+margin-top: 20px;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+
+
+@font-face
+{
+    font-family:		myFirstFont;
+    src: url(ExocetLight.woff);
+
+
+}
+
+/* border-bottom: 1px dotted goldenrod; */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+        opacity: 1;
+}
+
+
+.tooltip .tooltiptext {
+font-family: myFirstFont;
+    visibility: hidden;
+    width: 400px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 1px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 100%;
+    margin-left: -60px;
+        opacity: 0;
+    transition: opacity 1s;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+
+
+border: 1px solid rgba(144, 136, 88, 1);
+/*  border-style: solid; */
+    border-radius: 4px;
+ /*   border-color: goldenrod; */
+  /*  border-width: 2px;  */
+
+
+}
+
+
+a:link			{ font-family: myFirstFont; color: #928a70; font-weight: bold;    text-decoration: none; }
+a:visited		{ font-family: myFirstFont; color: #706850; font-weight: bold;    text-decoration: none; }
+a:active		{ font-family: myFirstFont; color: #ffffff; font-weight: bold;    text-decoration: none; }
+a:hover			{ font-family: myFirstFont; color: #ffffff; font-weight: bold;    text-decoration: none; }
+
+a.tiny:link			{ font-family: myFirstFont; color: #B4AC92; font-weight: bold;    text-decoration: none;}
+a.tiny:visited		{ font-family: myFirstFont; color: #928A72; font-weight: bold;    text-decoration: none; }
+a.tiny:active		{ font-family: myFirstFont; color: #928A72; font-weight: bold;    text-decoration: none; }
+a.tiny:hover			{ font-family: myFirstFont; color: #928A72; font-weight: bold;    text-decoration: none; }
+
+a.white:link			{ font-family: myFirstFont; color: #afafaf; font-weight: bold;    text-decoration: none;}
+a.white:visited		{ font-family: myFirstFont; color: #afafaf; font-weight: bold;    text-decoration: none; }
+a.white:active		{ font-family: myFirstFont; color: #928A72; font-weight: bold;    text-decoration: none; }
+a.white:hover			{ font-family: myFirstFont; color: #928A72; font-weight: bold;    text-decoration: none; }
+
+
+
+
+
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 5%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+/*  border-color: transparent transparent black transparent; */
+
+/*<p class="season" >WinTer is Coming</p>*/
+
+    border-color: transparent transparent #908858 transparent;
+
+}
+
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+
+.tooltip:hover > span {
+    visibility: visible;
+	opacity: 1;
+ }
+
+
+.tooltip span:hover {
+    display: none;
+ }
+
+.season {
+        color: #928a70;
+font-weight: bold;
+      }
+
+
+</style>
+<body style="text-align:center;" background="bg.jpg" >
+
+<br>
+<img src=birb.png align=center ><br>
+<h5>UNIQUE ITEM DATABASE</h5>
+
+<img src=hr.png align=center ><br>
+<a href=# class="white" > Jewelry:</a>
+<a href=rings.htm> Rings </a><a href=# > | </a> 
+<a href=amulets.htm> AmuleTs </a><a href=# > | </a> 
+<a href=charms.htm> Charms </a><a href=# > | </a> 
+<a href=jewels.htm> Jewels</a><a href=# > | </a> 
+<a href=circlets.htm> CircleTs</a>
+<br>
+<a href=# class="white" > Class-Specific ITems:</a>
+<a href=amazon.htm> Amazon </a><a href=# > | </a> 
+<a href=assassin.htm> Assassin </a><a href=# > | </a> 
+<a href=necromancer.htm> Necromancer </a><a href=# > | </a> 
+<a href=barbarian.htm> Barbarian</a><a href=# > | </a> 
+<a href=sorceress.htm> Sorceress</a><a href=# > | </a> 
+<a href=druid.htm> Druid</a><a href=# > | </a> 
+<a href=paladin.htm> Paladin</a>
+<br>
+
+<a href=# class="white" > Unique Armor:</a>
+<a href=helms.htm> Helms </a><a href=# > | </a> 
+<a href=armor.htm> Armor </a><a href=# > | </a> 
+<a href=shields.htm> Shields </a><a href=# > | </a> 
+<a href=gloves.htm> Gloves</a><a href=# > | </a> 
+<a href=boots.htm> BooTs</a><a href=# > | </a> 
+<a href=belts.htm> BelTs</a>
+<br>
+
+<a href=# class="white" > Unique Weapons:</a>
+<a href=axes.htm> Axes </a><a href=# > | </a> 
+<a href=bows.htm> Bows </a><a href=# > | </a> 
+<a href=crossbows.htm> Crossbows </a><a href=# > | </a> 
+<a href=daggers.htm> Daggers</a><a href=# > | </a> 
+<a href=maces.htm> Maces</a><a href=# > | </a> 
+<a href=polearms.htm> Polearms</a><a href=# > | </a> 
+<a href=scepters.htm> ScepTers </a><a href=# > | </a> 
+<a href=spears.htm> Spears </a><a href=# > | </a> 
+<a href=staves.htm> STaves</a><a href=# > | </a> 
+<a href=swords.htm> Swords</a><a href=# > | </a> 
+<a href=wands.htm> Wands</a><br>
+
+
+
+<img src=hr.png align=center ><br>
+<br>
+
+
+
+
+
+
+
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/lightcrossbow.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Light Crossbow</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/crossbow.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Crossbow</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="dashed"><img src=images/hellcast.gif ></p>
+<span class="tooltiptext">
+
+<h1>Shulgoth's Breath</h1>
+<h2>Heavy Crossbow</h2>
+<br>
+<h4>Spits wave of fire instead of bolts</h4>
+
+<h3>
++(100-150)% Enhanced Damage<br>
++(40-60)% Bonus to Attack rating<br>
++2 Sockets<br>
++(11-22) Fire Damage<br>
++(10-20)% Fire Resist<br>
+</h3>
+<h2> </h2>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/repeatingcrossbow.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Repeating Crossbow</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+
+<br>
+
+
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/lightcrossbow.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Light Crossbow</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/crossbow.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Crossbow</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="dashed"><img src=images/hellcast.gif ></p>
+<span class="tooltiptext">
+
+<h1>Shulgoth's Breath</h1>
+<h2>Balista</h2>
+<br>
+<h4>Spits wave of fire instead of bolts</h4>
+
+<h3>
++(150-200)% Enhanced Damage<br>
++(60-80)% Bonus to Attack rating<br>
++3 Sockets<br>
++(111-222) Fire Damage<br>
++(20-30)% Fire Resist<br>
++(7-10)% To Maximum Fire Resist<br>
+</h3>
+<h2> </h2>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/repeatingcrossbow.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Repeating Crossbow</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+
+
+<br>
+
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/lightcrossbow.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Light Crossbow</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/crossbow.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Crossbow</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="dashed"><img src=images/hellcast.gif ></p>
+<span class="tooltiptext">
+
+<h1>Shulgoth's Breath</h1>
+<h2>Colossus Crossbow</h2>
+<br>
+<h4>Spits wave of fire instead of bolts</h4>
+
+<h3>
++(200-250)% Enhanced Damage<br>
++(80-100)% Bonus to Attack rating<br>
++4 Sockets<br>
++(222-333) Fire Damage<br>
++(30-40)% Fire Resist<br>
++(12-15)% To Maximum Fire Resist<br>
++(400-500) to Life<br>
+</h3>
+<h2> </h2>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/repeatingcrossbow.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Repeating Crossbow</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+
+
+</body>
+</html>
