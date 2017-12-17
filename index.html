@@ -18,6 +18,8 @@ color: #fff;
 text-align: center;
 font-size: 15px;
 font-weight: normal;
+    font-family:		myFirstFont;
+
 }
 
 h3 {
@@ -29,7 +31,29 @@ font-size: 15px;
 font-weight: normal;
 }
 
-p.dashed {
+h4 {
+margin-top: 0px;
+margin-bottom: 0px;
+color: #b27300;
+text-align: center;
+font-size: 15px;
+font-weight: normal;
+}
+
+
+h5 {
+margin-top: 0px;
+margin-bottom: 10px;
+color: #afafaf;
+text-align: center;
+font-size: 15px;
+font-weight: bold;
+    font-family:		myFirstFont;
+
+}
+
+
+p.dashed { 
   border-style: dotted;
     border-radius: 4px;
     border-color: #908858;
@@ -80,7 +104,7 @@ margin-left: 10px;
 
 .tooltip .tooltiptext {
 font-family: myFirstFont;
-    visibility:	hidden;
+    visibility: hidden;
     width: 265px;
     background-color: black;
     color: #fff;
@@ -109,6 +133,26 @@ border: 1px solid rgba(144, 136, 88, 1);
 
 
 }
+
+
+a:link			{ font-family: myFirstFont; color: #928a70; font-weight: bold;    text-decoration: none;}
+a:visited		{ font-family: myFirstFont; color: #706850; font-weight: bold;    text-decoration: none; }
+a:active		{ font-family: myFirstFont; color: #ffffff; font-weight: bold;    text-decoration: none; }
+a:hover			{ font-family: myFirstFont; color: #ffffff; font-weight: bold;    text-decoration: none; }
+
+a.tiny:link			{ font-family: myFirstFont; color: #B4AC92; font-weight: bold;    text-decoration: none;}
+a.tiny:visited		{ font-family: myFirstFont; color: #928A72; font-weight: bold;    text-decoration: none; }
+a.tiny:active		{ font-family: myFirstFont; color: #928A72; font-weight: bold;    text-decoration: none; }
+a.tiny:hover			{ font-family: myFirstFont; color: #928A72; font-weight: bold;    text-decoration: none; }
+
+a.white:link			{ font-family: myFirstFont; color: #afafaf; font-weight: bold;    text-decoration: none;}
+a.white:visited		{ font-family: myFirstFont; color: #afafaf; font-weight: bold;    text-decoration: none; }
+a.white:active		{ font-family: myFirstFont; color: #928A72; font-weight: bold;    text-decoration: none; }
+a.white:hover			{ font-family: myFirstFont; color: #928A72; font-weight: bold;    text-decoration: none; }
+
+
+
+
 
 
 .tooltip .tooltiptext::after {
@@ -153,21 +197,58 @@ font-weight: bold;
 </style>
 <body style="text-align:center;" background="bg.jpg" >
 
-<div class="tooltip" font-family="myFirstFont" >
-<p class="dashed" >
-<img src=http://classic.battle.net/images/battle/diablo2exp/images/items/classspecific/wolfhead.gif ></p>
-<span class="tooltiptext" >
-<h1>TesT hover hover hover</h1>
-<h2>Wolf Head</h2>
-<h3>has some magic properTies
-nexT line over
-There is Third and 
-The lasT line</h3>
+
+<br>
+<img src=birb.png align=center ><br><br>
+<h5>UNIQUE ITEM DATABASE</h5>
+
+<img src=hr.png align=center ><br>
+<a href=# class="white" > Jewelry:</a>
+<a href=rings.htm> Rings </a><a href=# > | </a> 
+<a href=amulets.htm> AmuleTs </a><a href=# > | </a> 
+<a href=charms.htm> Charms </a><a href=# > | </a> 
+<a href=jewels.htm> Jewels</a><a href=# > | </a> 
+<a href=circlets.htm> CircleTs</a>
+<br>
+<a href=# class="white" > Class-Specific ITems:</a>
+<a href=amazon.htm> Amazon </a><a href=# > | </a> 
+<a href=assassin.htm> Assassin </a><a href=# > | </a> 
+<a href=necromancer.htm> Necromancer </a><a href=# > | </a> 
+<a href=barbarian.htm> Barbarian</a><a href=# > | </a> 
+<a href=sorceress.htm> Sorceress</a><a href=# > | </a> 
+<a href=druid.htm> Druid</a><a href=# > | </a> 
+<a href=paladin.htm> Paladin</a>
+<br>
+
+<a href=# class="white" > Unique Armor:</a>
+<a href=helms.htm> Helms </a><a href=# > | </a> 
+<a href=armor.htm> Armor </a><a href=# > | </a> 
+<a href=shields.htm> Shields </a><a href=# > | </a> 
+<a href=gloves.htm> Gloves</a><a href=# > | </a> 
+<a href=boots.htm> BooTs</a><a href=# > | </a> 
+<a href=belts.htm> BelTs</a>
+<br>
+
+<a href=# class="white" > Unique Weapons:</a>
+<a href=axes.htm> Axes </a><a href=# > | </a> 
+<a href=bows.htm> Bows </a><a href=# > | </a> 
+<a href=crossbows.htm> Crossbows </a><a href=# > | </a> 
+<a href=daggers.htm> Daggers</a><a href=# > | </a> 
+<a href=maces.htm> Maces</a><a href=# > | </a> 
+<a href=polearms.htm> Polearms</a><a href=# > | </a> 
+<a href=scepters.htm> ScepTers </a><a href=# > | </a> 
+<a href=spears.htm> Spears </a><a href=# > | </a> 
+<a href=staves.htm> STaves</a><a href=# > | </a> 
+<a href=swords.htm> Swords</a><a href=# > | </a> 
+<a href=wands.htm> Wands</a><br>
 
 
-<h2>Test hover hover hover</h2>
-</span>
-</div>
+<br>
+<img src=hr.png align=center ><br>
+<br><br>
+<h2>BY DEFAULT, DATABASE IS SECRET AND WILL UPDATE AS PLAYERS WILL DISCOVER THE ITEMS.<br>SEE THE EXAMPLE:</h2>
+
+
 
 <div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=http://classic.battle.net/images/battle/diablo2exp/images/items/classspecific/wolfhead.gif ></p>
 <span class="tooltiptext">
@@ -175,7 +256,7 @@ The lasT line</h3>
 <h1>???</h1>
 <h2>Wolf Head</h2>
 <br>
-<h3>UNKNOWN</h3>
+<h3>This iTem has noT been discovered yeT</h3>
 <br>
 
 
@@ -186,7 +267,22 @@ The lasT line</h3>
 
 
 
+<div class="tooltip" font-family="myFirstFont" >
 
+<p class="dashed" >
+<img src=http://classic.battle.net/images/battle/diablo2exp/images/items/classspecific/spiritmask.gif ></p>
+<span class="tooltiptext" >
+<h1>Unique ITem name</h1>
+<h2>Base iTem Type</h2>
+<BR>
+<h4>Special unique properTy</h4>
+<h3>Magic properTies<br>
+This iTem biTes<br>
+Rawrr!<br>
+</h3>
+<h2>.</h2>
+</span>
+</div>
 
 
 </body>
