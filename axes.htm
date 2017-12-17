@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+h1 {
+margin-top: 10px;
+margin-bottom: 0px;
+color: #928a70;
+text-align: center;
+font-size: 15px;
+font-weight: bold;
+}
+
+h2 {
+margin-top: 0px;
+margin-bottom: 10px;
+color: #fff;
+text-align: center;
+font-size: 15px;
+font-weight: normal;
+    font-family:		myFirstFont;
+
+}
+
+h3 {
+margin-top: 0px;
+margin-bottom: 0px;
+color: #4850b8;
+text-align: center;
+font-size: 15px;
+font-weight: normal;
+}
+
+h4 {
+margin-top: 0px;
+margin-bottom: 0px;
+color: #b27300;
+text-align: center;
+font-size: 15px;
+font-weight: normal;
+}
+
+
+h5 {
+margin-top: 0px;
+margin-bottom: 10px;
+color: #afafaf;
+text-align: center;
+font-size: 15px;
+font-weight: bold;
+    font-family:		myFirstFont;
+
+}
+
+
+p.dashed { 
+  border-style: dotted;
+    border-radius: 4px;
+    border-color: #908858;
+    border-width: 2px;
+   line-height: 0;
+    padding: 0px;
+ margin-bottom: 20px;
+margin-top: 20px;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+
+
+p.unknown {
+  filter: grayscale(100%);
+border-style: dotted;
+    border-radius: 4px;
+    border-color: #908858;
+    border-width: 2px;
+   line-height: 0;
+    padding: 0px;
+ margin-bottom: 20px;
+margin-top: 20px;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+
+
+@font-face
+{
+    font-family:		myFirstFont;
+    src: url(ExocetLight.woff);
+
+
+}
+
+/* border-bottom: 1px dotted goldenrod; */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+        opacity: 1;
+}
+
+
+.tooltip .tooltiptext {
+font-family: myFirstFont;
+    visibility: hidden;
+    width: 400px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 1px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 100%;
+    margin-left: -60px;
+        opacity: 0;
+    transition: opacity 1s;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+
+
+border: 1px solid rgba(144, 136, 88, 1);
+/*  border-style: solid; */
+    border-radius: 4px;
+ /*   border-color: goldenrod; */
+  /*  border-width: 2px;  */
+
+
+}
+
+
+a:link			{ font-family: myFirstFont; color: #928a70; font-weight: bold;    text-decoration: none; }
+a:visited		{ font-family: myFirstFont; color: #706850; font-weight: bold;    text-decoration: none; }
+a:active		{ font-family: myFirstFont; color: #ffffff; font-weight: bold;    text-decoration: none; }
+a:hover			{ font-family: myFirstFont; color: #ffffff; font-weight: bold;    text-decoration: none; }
+
+a.tiny:link			{ font-family: myFirstFont; color: #B4AC92; font-weight: bold;    text-decoration: none;}
+a.tiny:visited		{ font-family: myFirstFont; color: #928A72; font-weight: bold;    text-decoration: none; }
+a.tiny:active		{ font-family: myFirstFont; color: #928A72; font-weight: bold;    text-decoration: none; }
+a.tiny:hover			{ font-family: myFirstFont; color: #928A72; font-weight: bold;    text-decoration: none; }
+
+a.white:link			{ font-family: myFirstFont; color: #afafaf; font-weight: bold;    text-decoration: none;}
+a.white:visited		{ font-family: myFirstFont; color: #afafaf; font-weight: bold;    text-decoration: none; }
+a.white:active		{ font-family: myFirstFont; color: #928A72; font-weight: bold;    text-decoration: none; }
+a.white:hover			{ font-family: myFirstFont; color: #928A72; font-weight: bold;    text-decoration: none; }
+
+
+
+
+
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 5%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+/*  border-color: transparent transparent black transparent; */
+
+/*<p class="season" >WinTer is Coming</p>*/
+
+    border-color: transparent transparent #908858 transparent;
+
+}
+
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+
+.tooltip:hover > span {
+    visibility: visible;
+	opacity: 1;
+ }
+
+
+.tooltip span:hover {
+    display: none;
+ }
+
+.season {
+        color: #928a70;
+font-weight: bold;
+      }
+
+
+</style>
+<body style="text-align:center;" background="bg.jpg" >
+
+<br>
+<img src=birb.png align=center ><br>
+<h5>UNIQUE ITEM DATABASE</h5>
+
+<img src=hr.png align=center ><br>
+<a href=# class="white" > Jewelry:</a>
+<a href=rings.htm> Rings </a><a href=# > | </a> 
+<a href=amulets.htm> AmuleTs </a><a href=# > | </a> 
+<a href=charms.htm> Charms </a><a href=# > | </a> 
+<a href=jewels.htm> Jewels</a><a href=# > | </a> 
+<a href=circlets.htm> CircleTs</a>
+<br>
+<a href=# class="white" > Class-Specific ITems:</a>
+<a href=amazon.htm> Amazon </a><a href=# > | </a> 
+<a href=assassin.htm> Assassin </a><a href=# > | </a> 
+<a href=necromancer.htm> Necromancer </a><a href=# > | </a> 
+<a href=barbarian.htm> Barbarian</a><a href=# > | </a> 
+<a href=sorceress.htm> Sorceress</a><a href=# > | </a> 
+<a href=druid.htm> Druid</a><a href=# > | </a> 
+<a href=paladin.htm> Paladin</a>
+<br>
+
+<a href=# class="white" > Unique Armor:</a>
+<a href=helms.htm> Helms </a><a href=# > | </a> 
+<a href=armor.htm> Armor </a><a href=# > | </a> 
+<a href=shields.htm> Shields </a><a href=# > | </a> 
+<a href=gloves.htm> Gloves</a><a href=# > | </a> 
+<a href=boots.htm> BooTs</a><a href=# > | </a> 
+<a href=belts.htm> BelTs</a>
+<br>
+
+<a href=# class="white" > Unique Weapons:</a>
+<a href=axes.htm> Axes </a><a href=# > | </a> 
+<a href=bows.htm> Bows </a><a href=# > | </a> 
+<a href=crossbows.htm> Crossbows </a><a href=# > | </a> 
+<a href=daggers.htm> Daggers</a><a href=# > | </a> 
+<a href=maces.htm> Maces</a><a href=# > | </a> 
+<a href=polearms.htm> Polearms</a><a href=# > | </a> 
+<a href=scepters.htm> ScepTers </a><a href=# > | </a> 
+<a href=spears.htm> Spears </a><a href=# > | </a> 
+<a href=staves.htm> STaves</a><a href=# > | </a> 
+<a href=swords.htm> Swords</a><a href=# > | </a> 
+<a href=wands.htm> Wands</a><br>
+
+
+
+<img src=hr.png align=center ><br>
+<br>
+
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/handaxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Hand Axe</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/axe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Axe</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+
+<div class="tooltip" font-family="myFirstFont" ><p class="dashed"><img src=images/stormrider.gif ></p>
+<span class="tooltiptext">
+
+<h1>Storm Rider</h1>
+<h2>Double Axe</h2>
+<br>
+<h4>Releases Lightning on Striking</h4>
+
+<h3>
++(40-80)% Enhanced Damage<br>
++2 to Lightning Skills<br>
++(15-20)% Faster Attack Speed<br>
++(2-4)% to Maximum Lightning Resist<br>
++(1-30)% Lightning Damage<br>
+</h3>
+</span>
+</div>
+
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/militarypick.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Military Pick</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/waraxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>War Axe</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/largeaxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Large Axe</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/broadaxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Broad Axe</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/battleaxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Battle Axe</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+
+<div class="tooltip" font-family="myFirstFont" ><p class="dashed"><img src=images/greataxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>Hellish Butterfly</h1>
+<h2>Great Axe</h2>
+<br>
+<h4>Does Rear damage on Striking</h4>
+<h3>
++(50-80)% Enhanced Damage<br>
++(3-5)% Mana stolen per Hit<br>
++(10-25) Fire Damage<br>
++(25-35)% Bonus to Attack Rating<br>
++(5-10)% Fire Resist<br>
+</h3>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="dashed"><img src=images/butcher.gif ></p>
+<span class="tooltiptext">
+
+<h1>Butcher's Carver</h1>
+<h2>Giant Axe</h2>
+<br>
+<h4>Chance to Summon Butcher on Striking</h4>
+
+<h3>
++(140-190)% Enhanced Damage<br>
++(5-10) to Strength<br>
++10% Requirements<br>
++20 to Life<br>
++4% Life Stolen per Hit<br>
+</h3>
+</span>
+</div>
+
+<br>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/handaxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Hatchet</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/axe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Cleaver</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+
+<div class="tooltip" font-family="myFirstFont" ><p class="dashed"><img src=images/stormrider.gif ></p>
+<span class="tooltiptext">
+
+<h1>Storm Rider</h1>
+<h2>Twin Axe</h2>
+<br>
+<h4>Releases Lightning on Striking</h4>
+
+<h3>
++(100-140)% Enhanced Damage<br>
++3 to Lightning Skills<br>
++(20-25)% Faster Attack Speed<br>
++(5-7)% to Maximum Lightning Resist<br>
++(1-150) Lightning Damage<br>
++(5-10)% to All Lightning Damage<br>
+
+</h3>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/militarypick.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Crowbill</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/waraxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Naga</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/largeaxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Military Axe</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/broadaxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Bearded Axe</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/battleaxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Tabar</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+
+<div class="tooltip" font-family="myFirstFont" ><p class="dashed"><img src=images/greataxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>Hellish Butterfly</h1>
+<h2>Gothic Axe</h2>
+<br>
+<h4>Does Rear damage on Striking</h4>
+<h3>
++(100-130)% Enhanced Damage<br>
++(5-7)% Mana stolen per Hit<br>
++(50-125) Fire Damage<br>
++(45-55)% Bonus to Attack Rating<br>
++(10-15)% Fire Resist<br>
++(100-150)% Damage to Demons<br>
+</h3>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="dashed"><img src=images/butcher.gif ></p>
+<span class="tooltiptext">
+
+<h1>Butcher's Carver</h1>
+<h2>Ancient Axe</h2>
+<br>
+<h4>Chance to Summon Butcher on Striking</h4>
+
+<h3>
++(190-240)% Enhanced Damage<br>
++(15-20) to Strength<br>
++20% Requirements<br>
++40 to Life<br>
++8% Life Stolen per Hit<br>
++(15-20)% Chance to Crushing Blow<br>
+</h3>
+</span>
+</div>
+
+<br>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/handaxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Tomahawk</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/axe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Small Crescent</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+
+<div class="tooltip" font-family="myFirstFont" ><p class="dashed"><img src=images/stormrider.gif ></p>
+<span class="tooltiptext">
+
+<h1>Storm Rider</h1>
+<h2>Ettin Axe</h2>
+<br>
+<h4>Releases Lightning on Striking</h4>
+
+<h3>
++(160-200)% Enhanced Damage<br>
++4 to Lightning Skills<br>
++(25-30)% Faster Attack Speed<br>
++(8-10)% to Maximum Lightning Resist<br>
++(1-330) Lightning Damage<br>
++(10-15)% to All Lightning Damage<br>
+-(3-6)% to Enemy Lightning Resist<br>
+</h3>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/militarypick.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>War Spike</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/waraxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Berserker Axe</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/largeaxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Feral Axe</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/broadaxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Silver-Edged Axe</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="unknown"><img src=images/battleaxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>???</h1>
+<h2>Decapitator</h2>
+<br>
+<h3>This iTem has noT been discovered yeT</h3>
+<br>
+</span>
+</div>
+
+
+<div class="tooltip" font-family="myFirstFont" ><p class="dashed"><img src=images/greataxe.gif ></p>
+<span class="tooltiptext">
+
+<h1>Hellish Butterfly</h1>
+<h2>Champion Axe</h2>
+<br>
+<h4>Does Rear damage on Striking</h4>
+<h3>
++(150-180)% Enhanced Damage<br>
++(7-9)% Mana stolen per Hit<br>
++(100-250) Fire Damage<br>
++(70-80)% Bonus to Attack Rating<br>
++(15-20)% Fire Resist<br>
++(150-200)% Damage to Demons<br>
++25 Life after Each Demon Kill<br>
+</h3>
+</span>
+</div>
+
+<div class="tooltip" font-family="myFirstFont" ><p class="dashed"><img src=images/butcher.gif ></p>
+<span class="tooltiptext">
+
+<h1>Butcher's Carver</h1>
+<h2>Glorious Axe</h2>
+<br>
+<h4>Chance to Summon Butcher on Striking</h4>
+
+<h3>
++(240-290)% Enhanced Damage<br>
++(25-30) to Strength<br>
++30% Requirements<br>
++60 to Life<br>
++12% Life Stolen per Hit<br>
++(20-25)% Chance to Crushing Blow<br>
++(30-40)% Chance to Open Wounds<br>
+</h3>
+</span>
+</div>
+
+
+</body>
+</html>
